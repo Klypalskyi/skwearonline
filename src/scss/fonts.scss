@@ -4,9 +4,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Cormorant Unicase Regular"), local("CormorantUnicase-Regular"),
-    url("../fonts/cormorant-unicase-v5-latin-regular.woff2") format("woff2"),
+    url("fonts/cormorant-unicase-v5-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/cormorant-unicase-v5-latin-regular.woff") format("woff");
+    url("fonts/cormorant-unicase-v5-latin-regular.woff") format("woff");
 }
 
 /* cormorant-unicase-600 - latin */
@@ -15,9 +15,9 @@
   font-style: normal;
   font-weight: 600;
   src: local("Cormorant Unicase SemiBold"), local("CormorantUnicase-SemiBold"),
-    url("../fonts/cormorant-unicase-v5-latin-600.woff2") format("woff2"),
+    url("fonts/cormorant-unicase-v5-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/cormorant-unicase-v5-latin-600.woff") format("woff");
+    url("fonts/cormorant-unicase-v5-latin-600.woff") format("woff");
 }
 
 /* Roboto Light */
@@ -26,7 +26,7 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -34,6 +34,6 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url("../fonts/open-sans-v15-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/open-sans-v15-latin_cyrillic-regular.woff") format("woff");
+    url("fonts/open-sans-v15-latin_cyrillic-regular.woff2") format("woff2"),
+    url("fonts/open-sans-v15-latin_cyrillic-regular.woff") format("woff");
 }
