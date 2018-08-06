@@ -1,0 +1,28 @@
+@media (min-width: 320px) {
+  .instagram {
+    margin-bottom: rem(40);
+  }
+
+  .instagram__title-box {
+    text-align: center;
+    margin-bottom: rem(22.5);
+  }
+
+  .instagram__title-box > .title-box--title {
+    margin-bottom: rem(28.5);
+  }
+
+  .instagram__image-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: rem(320);
+    min-height: rem(320);
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: rem(40);
+  }
+
+  .insta-img8 {
+    display: none;
+  }
+}

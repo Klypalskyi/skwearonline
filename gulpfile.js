@@ -95,7 +95,7 @@ gulp.task('images', () =>
 );
 
 gulp.task('fonts', () =>
-  gulp.src('./src/fonts/**/*.{woff,woff2}').pipe(gulp.dest('./build/fonts')),
+  gulp.src('./src/fonts/**/*.{woff,woff2,ttf}').pipe(gulp.dest('./build/fonts')),
 );
 
 gulp.task('watch', () => {

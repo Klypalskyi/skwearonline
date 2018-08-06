@@ -1,0 +1,126 @@
+@media (min-width: 320px) {
+  .footer {
+    background: #efefef;
+    text-align: center;
+  }
+
+  .footer__content {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .content__logo-box {
+    padding-top: rem(43.5);
+    margin-bottom: rem(26.5);
+
+    > .nav__logo {
+      color: #333;
+    }
+  }
+
+  .content__address {
+    margin-bottom: rem(43.5);
+  }
+
+  .content__about {
+    margin-bottom: rem(43.5);
+  }
+
+  .content__faq {
+    margin-bottom: rem(42.34);
+  }
+
+  .content__connect {
+    margin-bottom: rem(40.14);
+
+    > .footer--title {
+      display: none;
+    }
+
+    > a {
+      padding: 0 rem(8.52);
+    }
+  }
+
+  .content__news {
+    margin-bottom: rem(44.6);
+
+    > .footer--text {
+      margin-bottom: rem(22.55);
+    }
+
+    > button {
+      min-width: 82.5%;
+      margin: auto;
+      background: #333;
+      display: flex;
+      border: 0;
+      align-items: center;
+      justify-content: space-around;
+
+      > .button--svg {
+        fill: #ddd;
+        flex-basis: 22.13%;
+        align-self: center;
+      }
+
+      > .button--link {
+        font-family: "Roboto", sans-serif;
+        font-size: rem(12);
+        letter-spacing: rem(0.8);
+        line-height: rem(45.09);
+        color: #ddd;
+        flex-basis: 77.87%;
+        border-left: #474646 solid rem(1);
+      }
+    }
+  }
+
+  .footer--link {
+    display: block;
+  }
+
+  .footer--link:hover {
+    text-decoration: underline;
+  }
+
+  .footer--title {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(13);
+    letter-spacing: rem(0.2);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: rem(27);
+  }
+
+  .footer--text {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(12);
+    line-height: rem(21);
+    letter-spacing: rem(0.5);
+    color: #333;
+  }
+
+  .address--top {
+    margin-bottom: rem(35.5);
+  }
+
+  .footer__bot {
+    background: #222222;
+    text-align: center;
+
+    &--text {
+      font-family: "Roboto", sans-serif;
+      color: #777777;
+      font-size: rem(12);
+      letter-spacing: rem(0.8);
+      font-weight: 600;
+      line-height: rem(50);
+    }
+
+    &--text::before {
+      content: "\00A9";
+      color: #777777;
+    }
+  }
+}

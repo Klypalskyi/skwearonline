@@ -1,0 +1,37 @@
+@function rem($px) {
+  $result: $px / 16;
+  @return #{$result}rem;
+}
+
+.menu--link,
+.nav__logo,
+.account--link {
+  color: #ddd;
+}
+
+.zoom > svg {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+@media (min-width: 320px) {
+  .main-link {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(12);
+    font-weight: 600;
+    text-decoration: underline;
+    color: #333;
+  }
+
+  .title-box--title {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(13);
+    letter-spacing: rem(0.4);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

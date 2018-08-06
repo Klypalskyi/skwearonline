@@ -1,0 +1,31 @@
+@media (min-width: 320px) {
+  .aboutUs {
+    margin-bottom: rem(79.5);
+  }
+
+  .aboutUs__r-side {
+    margin-bottom: rem(24);
+  }
+
+  .aboutUs__l-side {
+    max-width: 85%;
+    padding-left: rem(15);
+  }
+
+  .l-side--title {
+    font-family: "Open Sans", sans-serif;
+    font-size: rem(18);
+    letter-spacing: rem(0.4);
+    color: #000;
+    margin-bottom: rem(31);
+  }
+
+  .l-side--text {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(13);
+    line-height: rem(23);
+    letter-spacing: rem(0.4);
+    color: #444;
+    margin-bottom: rem(34.5);
+  }
+}
