@@ -875,6 +875,10 @@ ul {
     align-self: center;
   }
 
+  .mall:hover {
+    background: #333;
+  }
+
   .nav__logo {
     text-transform: uppercase;
     font-family: "Cormorant Unicase", sans-serif;
@@ -904,7 +908,7 @@ ul {
     cursor: pointer;
   }
 
-  .nav__menu:nth-child(-n+4) {
+  .menu--link:nth-child(-n+1) {
     border-bottom: #464646 1px solid;
   }
 
@@ -921,7 +925,7 @@ ul {
     fill: #ddd;
   }
 
-  .header__image-box {
+  .header {
     background-image: url(../img/header3201.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1080,6 +1084,17 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    display: none;
+  }
+
+  .slider--item:hover > .slider--hover-box {
+    display: flex;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .hover-link {
@@ -1133,7 +1148,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     max-width: 20rem;
-    min-height: 20rem;
+    max-height: 20rem;
+    margin: auto;
     justify-content: space-between;
     align-content: space-between;
     margin-bottom: 2.5rem;
@@ -1269,12 +1285,65 @@ ul {
   }
 }
 
+@media (min-width: 480px) {
+  .prev {
+    left: 115px;
+  }
+
+  [dir="rtl"] .prev {
+    left: auto;
+    right: -25px;
+  }
+
+  .next {
+    right: 118px;
+  }
+
+  [dir="rtl"] .next {
+    left: -25px;
+    right: auto;
+  }
+
+  .instagram__image-box {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+
 @media (min-width: 768px) {
+  .header {
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
   .nav__menu-icon {
     display: none;
   }
 
   .nav__menu > li {
     float: left;
+  }
+
+  .prev {
+    left: 35px;
+  }
+
+  [dir="rtl"] .prev {
+    left: auto;
+    right: -25px;
+  }
+
+  .next {
+    right: 35px;
+  }
+
+  [dir="rtl"] .next {
+    left: -25px;
+    right: auto;
   }
 }

@@ -117,6 +117,10 @@
     align-self: center;
   }
 
+  .mall:hover {
+    background: #333;
+  }
+
   .nav__logo {
     text-transform: uppercase;
     font-family: "Cormorant Unicase", sans-serif;
@@ -146,7 +150,7 @@
     cursor: pointer;
   }
 
-  .nav__menu:nth-child(-n+4) {
+  .menu--link:nth-child(-n+1) {
     border-bottom: #464646 1px solid;
   }
 
@@ -163,7 +167,7 @@
     fill: #ddd;
   }
 
-  .header__image-box {
+  .header {
     background-image: url(../img/header3201.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,7 +206,18 @@
   }
 }
 
+@media (min-width: 480px) {
+
+}
+
 @media (min-width: 768px) {
+  .header {
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
   .nav__menu-icon {
     display: none;
   }

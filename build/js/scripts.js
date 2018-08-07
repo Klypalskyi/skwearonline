@@ -4,34 +4,29 @@ $(document).ready(function () {
   $('.carousel__slider').slick({
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
+    arrows: true,
     centerMode: true,
-    slidesToShow: 3,
     centerPadding: "60px",
     variableWidth: true,
     initialSlide: 2,
     responsive: [{
       breakpoint: 960,
       settings: {
-        arrows: true,
         centerMode: true,
         slidesToShow: 3
       }
     }, {
       breakpoint: 768,
       settings: {
-        arrows: true,
         centerMode: true,
-        slidesToShow: 2
+        slidesToScroll: 3,
+        slidesToShow: 3
       }
     }, {
       breakpoint: 320,
       settings: {
-        arrows: true,
         centerMode: true,
-        rows: 1,
-        centerPadding: "100px",
-        slidesToShow: 1,
-        initialSlide: 3
+        slidesToShow: 1
       }
     }]
   });
