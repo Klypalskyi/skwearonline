@@ -30,12 +30,51 @@
 
 @media (min-width: 480px) {
   .instagram__image-box {
-    transform: scale(1.2)  ;
-    -webkit-transform: scale(1.2)  ;
-    -moz-transform: scale(1.2)  ;
-    -ms-transform: scale(1.2)  ;
-    -o-transform: scale(1.2)  ;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
 }
 
+@media (min-width: 768px) {
+  .instagram__image-box {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    max-width: rem(768);
+  }
+
+  .insta-img1 {
+    position: relative;
+    top: rem(-15);
+  }
   
+  .insta-img2 {
+    position: relative;
+    bottom: rem(-15);
+  }
+
+  .insta-img3 {
+    position: relative;
+    top: rem(-20);
+  }
+
+  .insta-img5 {
+    position: relative;
+    top: rem(-15);
+  }
+
+  .insta-img6 {
+    position: relative;
+    bottom: rem(-15);
+  }
+
+  .insta-img7{
+    position: relative;
+    top: rem(-15);
+  }
 }

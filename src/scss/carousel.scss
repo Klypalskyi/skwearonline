@@ -76,6 +76,7 @@
 
   .prev {
     left: 35px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: auto;
@@ -84,7 +85,8 @@
   }
 
   .next {
-    right: 35px;
+    right: 39px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: -25px;
@@ -130,11 +132,16 @@
   .hover-link {
     line-height: rem(36);
   }
+
+  .zoom {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 480px) {
   .prev {
     left: 115px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: auto;
@@ -144,6 +151,7 @@
 
   .next {
     right: 118px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: -25px;
@@ -155,6 +163,7 @@
 @media (min-width: 768px) {
   .prev {
     left: 35px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: auto;
@@ -164,6 +173,7 @@
 
   .next {
     right: 35px;
+    top: 170px;
 
     [dir="rtl"] & {
       left: -25px;
