@@ -37,6 +37,7 @@
     max-width: 90%;
     margin: auto;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: rem(79.5);
   }
 
@@ -45,7 +46,7 @@
   }
 
   .aboutUs__l-side {
-    margin: auto;
+    margin: 0;
     flex-basis: 50%;
   }
 }

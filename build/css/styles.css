@@ -1796,6 +1796,28 @@ html {
   }
 }
 
+@media (min-width: 412px) {
+  .prev {
+    left: 82px;
+    top: 170px;
+  }
+
+  [dir="rtl"] .prev {
+    left: auto;
+    right: -25px;
+  }
+
+  .next {
+    right: 85px;
+    top: 170px;
+  }
+
+  [dir="rtl"] .next {
+    left: -25px;
+    right: auto;
+  }
+}
+
 @media (min-width: 480px) {
   .header {
     background-image: url(../img/header.png);
@@ -1844,6 +1866,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 0.9375rem;
     min-height: 3.4375rem;
   }
 
@@ -1907,6 +1930,7 @@ html {
     max-width: 90%;
     margin: auto;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 4.96875rem;
   }
 
@@ -1915,7 +1939,7 @@ html {
   }
 
   .aboutUs__l-side {
-    margin: auto;
+    margin: 0;
     flex-basis: 50%;
   }
 
@@ -2006,6 +2030,136 @@ html {
 
   .content__logo-box > .nav__logo {
     display: inline;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__nav {
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .nav__logo {
+    font-size: 1.1875rem;
+    flex-basis: 10%;
+    margin-right: 0.9375rem;
+  }
+
+  .nav__menu {
+    justify-content: space-around;
+    flex-basis: 40%;
+    min-width: 40%;
+    margin-right: 10.3125rem;
+  }
+
+  .nav__account {
+    flex-basis: 20%;
+  }
+
+  .menu--link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 0.8125rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    padding: 0.3125rem 0;
+    border: 0;
+    display: block;
+    background: #222;
+    cursor: pointer;
+  }
+
+  .menu--link:hover {
+    background: transparent;
+    box-shadow: 0 0.12rem 0 #ddd;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    color: #ddd;
+  }
+
+  .header--scrollText {
+    padding-top: 37.5rem;
+    padding-bottom: 3.75rem;
+    margin-left: 3.75rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+
+  .header--scrollText::before {
+    content: "";
+    display: inline-block;
+    background: #fff;
+    min-width: 2.8125rem;
+    min-height: 0.0625rem;
+    position: absolute;
+    left: -1rem;
+    top: 35.3125rem;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+
+  .slider--item {
+    min-width: 18.75rem;
+  }
+
+  .prev {
+    left: 18px;
+    top: 230px;
+  }
+
+  [dir="rtl"] .prev {
+    left: auto;
+    right: -25px;
+  }
+
+  .next {
+    right: 21px;
+    top: 230px;
+  }
+
+  [dir="rtl"] .next {
+    left: -25px;
+    right: auto;
+  }
+
+  .title-box--link {
+    position: relative;
+    top: -0.875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .instagram__image-box {
+    max-width: 60rem;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .insta-img2,
+  .insta-img3,
+  .insta-img4,
+  .insta-img5,
+  .insta-img6 {
+    padding: 0 0.3125rem;
+  }
+
+  .insta-img1 {
+    padding-right: 0.3125rem;
+  }
+
+  .insta-img7 {
+    padding-left: 0.3125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider--item {
+    min-width: 23.4375rem;
   }
 }
 

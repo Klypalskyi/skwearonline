@@ -401,21 +401,24 @@
     };
   }(), _();
 })(window.jQuery || window.Zepto);
-'use strict';
+"use strict";
 
 $(document).ready(function () {
-  $('.carousel__slider').slick({
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+  $(".carousel__slider").slick({
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
     arrows: true,
     centerMode: true,
-    centerPadding: "60px",
     variableWidth: true,
     initialSlide: 2,
     responsive: [{
+      breakpoint: 960,
+      settings: {}
+    }, {
       breakpoint: 768,
       settings: {
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         slidesToScroll: 3
       }
@@ -423,18 +426,18 @@ $(document).ready(function () {
       breakpoint: 320,
       settings: {
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
     }]
   });
 
-  $('.nav__menu-icon').click(function () {
-    $('.nav__menu').toggle();
+  $(".nav__menu-icon").click(function () {
+    $(".nav__menu").toggle();
   });
 
   (function () {
-
     "use strict";
 
     var toggles = document.querySelectorAll(".nav__menu-icon");
@@ -442,7 +445,7 @@ $(document).ready(function () {
     for (var i = toggles.length - 1; i >= 0; i--) {
       var toggle = toggles[i];
       toggleHandler(toggle);
-    };
+    }
 
     function toggleHandler(toggle) {
       toggle.addEventListener("click", function (e) {
@@ -451,26 +454,25 @@ $(document).ready(function () {
       });
     }
   })();
-  $('.zoom').magnificPopup({
-    type: 'image',
-    mainClass: 'mfp-zoom-in',
-    tLoading: '',
+  $(".zoom").magnificPopup({
+    type: "image",
+    mainClass: "mfp-zoom-in",
+    tLoading: "",
     removalDelay: 500, //delay removal by X to allow out-animation
     callbacks: {
-
       imageLoadComplete: function imageLoadComplete() {
         var self = this;
         setTimeout(function () {
-          self.wrap.addClass('mfp-image-loaded');
+          self.wrap.addClass("mfp-image-loaded");
         }, 16);
       },
       close: function close() {
-        this.wrap.removeClass('mfp-image-loaded');
+        this.wrap.removeClass("mfp-image-loaded");
       },
 
       // don't add this part, it's just to avoid caching of image
       beforeChange: function beforeChange() {
-        this.items[0].src = this.items[0].src + '?=' + Math.random();
+        this.items[0].src = this.items[0].src + "?=" + Math.random();
       }
     },
 

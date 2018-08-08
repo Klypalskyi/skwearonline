@@ -78,3 +78,27 @@
     top: rem(-15);
   }
 }
+
+@media (min-width: 960px) {
+  .instagram__image-box {
+    max-width: rem(960);
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .insta-img2,
+  .insta-img3,
+  .insta-img4,
+  .insta-img5,
+  .insta-img6, {
+    padding: 0 rem(5);
+  }
+
+  .insta-img1 {
+    padding-right: rem(5);
+  }
+
+  .insta-img7 {
+    padding-left: rem(5);
+  }
+}
