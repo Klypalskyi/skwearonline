@@ -1901,6 +1901,24 @@ html {
     right: auto;
   }
 
+  .aboutUs {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 4.96875rem;
+  }
+
+  .aboutUs__r-side {
+    flex-basis: 40%;
+  }
+
+  .aboutUs__l-side {
+    margin: auto;
+    flex-basis: 50%;
+  }
+
   .instagram__image-box {
     transform: none;
     -webkit-transform: none;

@@ -29,3 +29,23 @@
     margin-bottom: rem(34.5);
   }
 }
+
+@media (min-width: 768px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: rem(79.5);
+  }
+
+  .aboutUs__r-side {
+    flex-basis: 40%;
+  }
+
+  .aboutUs__l-side {
+    margin: auto;
+    flex-basis: 50%;
+  }
+}
