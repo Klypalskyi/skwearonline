@@ -133,8 +133,7 @@
     text-align: center;
   }
 
-  .enter,
-  .registration,
+  .account-box,
   .favorite,
   .account {
     display: none;
@@ -241,6 +240,7 @@
     display: flex;
     min-width: 60%;
     flex-basis: 70%;
+    justify-content: space-between;
   }
 
   .menu--link {
@@ -264,6 +264,7 @@
   .nav__account {
     display: block;
     flex-basis: 25%;
+    text-align: center;
   }
 }
 
@@ -280,7 +281,7 @@
   }
 
   .nav__menu {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-basis: 40%;
     min-width: 40%;
     margin-right: rem(165);
@@ -341,5 +342,86 @@
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__logo {
+    font-size: rem(28);
+  }
+
+  .nav__logo-box {
+    flex-basis: 25%;
+  }
+
+  .account-box {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .enter,
+  .registration {
+    display: block;
+    padding: rem(2);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: rem(12);
+    letter-spacing: rem(0.9);
+  }
+
+  .account-line {
+    display: inline-block;
+    min-width: rem(1);
+    min-height: rem(15);
+    background: #444;
+  }
+
+  .account,
+  .favorite,
+  .mall {
+    padding-top: rem(15);
+    padding-bottom: rem(10);
+  }
+
+  .nav__account {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__menu {
+    min-width: auto;
+  }
+
+  .enter:hover,
+  .registration:hover {
+    background: transparent;
+    -webkit-box-shadow: 0 0.12rem 0 #ddd;
+    box-shadow: 0 0.12rem 0 #ddd;
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    color: #ddd;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header--scrollText {
+    padding-top: rem(1123);
+    padding-bottom: rem(71);
+    margin-left: rem(60);
+    font-size: rem(12);
+  }
+
+  .header--scrollText::before {
+    min-width: rem(80);
+    left: rem(-33);
+    top: rem(1060);
   }
 }

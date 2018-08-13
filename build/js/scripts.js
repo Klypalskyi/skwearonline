@@ -410,20 +410,20 @@ $(document).ready(function () {
     arrows: true,
     centerMode: true,
     variableWidth: true,
-    slidesToScroll: 3,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     initialSlide: 2,
     responsive: [{
       breakpoint: 768,
       settings: {
-        centerMode: true,
-        variableWidth: true,
-        slidesToShow: 3
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     }, {
       breakpoint: 320,
       settings: {
-        centerMode: true,
-        variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
